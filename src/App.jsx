@@ -6,6 +6,7 @@ import ProyectsPage from "./pages/ProyectsPage";
 import RegisterPage from "./pages/RegisterPage";
 import SignInPage from "./pages/LogInPage";
 import WebsiteLayout from "./layouts/WebsiteLayout";
+import OneProyectPage from "./pages/OneProyectPage";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<WebsiteLayout/> } > 
           <Route path="/" element={<Home />} />
           <Route path="/proyects" element={<ProyectsPage/>} />
+          <Route path="/proyects/:id" element={<OneProyectPage/>} />
           <Route path="/register" element={<RegisterPage/>} />
           <Route path="/login" element={<SignInPage/>} />
           </Route>

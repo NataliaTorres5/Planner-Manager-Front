@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom"
 
 
 
-function ProyectsComponents({name, description, status, date}) {
+function ProyectsComponents({_id, name, description, status, date}) {
 console.log(this)
     return (
         <article>
@@ -12,6 +13,11 @@ console.log(this)
             <p>{status}</p>
             <p>{date}</p>
             </div>
+            
+            <Link to={`/proyects/${_id}`}>
+             Ver más
+            </Link>
+
         </div>
 
         </article>

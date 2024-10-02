@@ -12,6 +12,17 @@ const proyectQuery =  {
             return []
             
         }
+    },
+
+    async getOneById(id){
+        try {
+            const response = await axios(`http://localhost:5000/api/proyects/${id}`);
+            return response.data.response
+        } catch (error) {
+            console.log(error);
+            return 
+            
+        }
     }
 
 
