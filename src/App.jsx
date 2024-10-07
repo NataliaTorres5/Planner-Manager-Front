@@ -41,7 +41,7 @@ const token = localStorage.getItem("token");
             <Route path="/" element={<Home />} />
             <Route path="/proyects" element={<ProyectsPage />} />
             <Route path="/proyects/:id" element={<OneProyectPage />} />
-            <Route path="/fproyects" element={<FakeProyectPage/>}/>
+            <Route path="/proyectsDisplay" element={<FakeProyectPage/>}/>
 
             {
               /*

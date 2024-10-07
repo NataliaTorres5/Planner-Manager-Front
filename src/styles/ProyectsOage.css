@@ -1,0 +1,29 @@
+
+/*For no logged and proyects*/
+.ProyectsMain {
+    min-width: 50vw;
+}
+
+.proyectscards{
+    padding: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.proyectTitle{
+    padding-top: 2rem;
+}
+
+/*For logged and proyects*/
+
+.ProyectsComponents{
+    display: flex;
+    margin: 2rem;
+    width: 20rem;
+   height: 20rem;
+}
+
+.proyectTitleh3{
+    color: aqua;
+}

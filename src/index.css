@@ -34,7 +34,7 @@ a:hover {
 
 body {
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif !important;
   display: flex;
   background-color: #f9f6ee !important;
 }
@@ -45,7 +45,6 @@ main {
   justify-content: center;
   min-height: 61vh;
   align-items: start;
-  width: 80vw;
 }
 
 h1 {

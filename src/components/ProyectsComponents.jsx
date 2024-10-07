@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import proyectQuery from "../services/proyectQuery";
 import { useSelector } from "react-redux";
+import "../styles/ProyectsOage.css"
 
 function ProyectsComponents({
   _id,
@@ -51,14 +52,13 @@ function ProyectsComponents({
   };
 
   return (
-    <article>
-      <div className="ProyectsComponents">
-        <h3>{name}</h3>
+    <section>
+      <div className=" card ProyectsComponents">
+        <h3 className="proyectTitleh3">{name}</h3>
         <div>
           <p>{description}</p>
           <p>{proyectStatus(status)}</p>
           <p>{proyecPriority ( priority)} </p>
-          <p>{date}</p>
         </div>
 
         <Link to={`/proyects/${_id}`}>Ver más</Link>
@@ -108,7 +108,7 @@ function ProyectsComponents({
           )}
         </div>
       </div>
-    </article>
+    </section>
   );
 }
 

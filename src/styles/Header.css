@@ -39,3 +39,18 @@ header {
 .nav-link {
   color: var(--purple) !important;
 }
+
+.navButton{
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: var(--dustPink);
+  padding: 3px 18px 3px 18px;
+  border: none;
+ 
+  color: black;
+}
+.navButton:hover{
+  color: black;
+  background-color: var(--dustBlue);
+}
+

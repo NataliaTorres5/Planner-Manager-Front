@@ -45,7 +45,7 @@ function Header() {
                   ): (
                     <>
                     <Link  className={`nav-link ${activeLink=== 'profile'?'active':'' }`}  onClick={()=>handleLinkClick('profile')} id="home-tab" data-toggle="tab"  to="/private/profile">Profile</Link>
-                    <button onClick={handleClick} >logout</button>
+                    <button className="navButton" onClick={handleClick} >logout</button>
                     </>
 
                   )

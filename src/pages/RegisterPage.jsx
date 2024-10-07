@@ -83,7 +83,7 @@ function RegisterPage() {
             />
           </div>
 
-          <button type="submit">Register</button>
+          <button className="linkHero" type="submit">Register</button>
         </form>
       </section>
       </>
