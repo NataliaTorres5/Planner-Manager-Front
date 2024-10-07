@@ -1,9 +1,14 @@
 import {configureStore} from '@reduxjs/toolkit'
-
+import userReducer from "./reducers/userReducer"
 const options  = {
 
     //se configuran los reducers que es el que accede al store
-    reducer: {} 
+    reducer: {
+
+        user: userReducer
+
+
+    } 
 
 
 }
