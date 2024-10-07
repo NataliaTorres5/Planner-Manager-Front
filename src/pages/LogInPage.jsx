@@ -1,7 +1,11 @@
 import authQueries from "../services/autheQueries";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+
+import { useDispatch } from "react-redux";
+import userActions from "../store/actions/userActions";
 function LogInPage() {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: "",
@@ -18,8 +22,9 @@ function LogInPage() {
     const aux = new FormData(event.target);
     const data = Object.fromEntries(aux.entries());
     authQueries.signInUser(data).then((response) => {
-      console.log(response)
+      console.log(response);
       if (response.token) {
+        dispatch(userActions.login(response));
         navigate("/proyects");
       } else {
         console.log(response.message);
