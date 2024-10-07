@@ -50,7 +50,7 @@ function TasksComponent({  date, title, text, status, priority, _id }){
       proyects: params.id,
     }
     console.log(updateData)
-    taskQuery.updateOneTask(token, _id,updateData).then((res) => {
+    taskQuery.updateOneTask(token, _id, updateData).then((res) => {
       console.log(res, "task was updated")
     })
 

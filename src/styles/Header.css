@@ -1,0 +1,41 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+}
+.nav-icon {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navElements {
+  display: flex;
+  width: 25rem;
+  justify-content: space-between;
+}
+
+.navh1 {
+  color: var(--gray);
+}
+
+.nav-tabs {
+  --bs-nav-tabs-link-active-color: var(--pink) !important;
+  font-weight: 600 !important ;
+}
+
+.nav-link.active {
+  color: var(--blue) !important;
+}
+
+.nav-link {
+  color: var(--purple) !important;
+}

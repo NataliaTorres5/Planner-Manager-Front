@@ -1,7 +1,8 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  padding:0;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -11,6 +12,16 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --pink:  #ffc8cd; 
+  --blue: #95d7d3;
+  --green: #b6dbb0;
+  --yellow: #fee0a4;
+  --gray: #909090;  
+  --purple: #b995d7;  
+  --dustPink: #dab7ac;
+  --dustBlue: #aad6d3;
+
 }
 
 a {
@@ -24,10 +35,15 @@ a:hover {
 
 body {
   margin: 0;
+  font-family: "Raleway", sans-serif;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+}
+
+main{
+  display: flex;
+    align-items: center;
+    height: 60vh;
+justify-content: center;
 }
 
 h1 {

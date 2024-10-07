@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero-box{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 21rem;
+}
+.heroFlower{
+    margin: 15px;
+}
+
+.cta{
+    margin-bottom: 25px;
+}
+
+.linkHero{
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: var(--dustPink);
+    padding: 10px 18px 10px 18px;
+    margin: 15px;
+    color: black;
+}
+.linkHero:hover{
+    color: black;
+    background-color: var(--dustBlue);
+}

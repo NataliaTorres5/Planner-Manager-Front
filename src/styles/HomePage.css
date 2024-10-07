@@ -1,3 +1,15 @@
-.Homepage{
-    height: 80vh;
+
+.video_container{
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    overflow: hidden;
+
 }
+
+video{
+    border-radius: 10px;
+    opacity: 0.33;
+}
+
+

@@ -1,0 +1,10 @@
+
+.footerMargin{
+
+    border-top: solid 2px #dee2e6;
+}
+
+.footerText{
+    margin-top: 15px;
+    color: var(--gray);
+}
