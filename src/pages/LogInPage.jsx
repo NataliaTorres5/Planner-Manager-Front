@@ -1,9 +1,10 @@
 import authQueries from "../services/autheQueries";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
 import { useDispatch } from "react-redux";
 import userActions from "../store/actions/userActions";
+import "../styles/LogInPage.css"
+
 function LogInPage() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -32,29 +33,35 @@ function LogInPage() {
     });
   };
   return (
-    <section>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <input
+    <>
+    <img className="highlighter high1" src="/highlighter2.png" alt="" />
+    <section className="shadow p-3 mb-5 bg-white rounded form-user log-In">
+      <form onSubmit={handleSubmit} >
+        <div className="log-user">
+            <span className="labelForm"> - Email</span>
+          <input className="form-user-box"
             type="email"
             name="email"
-            placeholder="Email"
+            placeholder="Your email address.."
             value={formData.email}
             onChange={handleChange}
-          />
+          />      
         </div>
-        <div>
-          <input
+
+        <div className="log-user">
+        <span className="labelForm"> - Password</span>
+          <input className="form-user-box"
             type="password"
             name="password"
-            placeholder="Password"
+            placeholder="Your password.."
             value={formData.password}
             onChange={handleChange}
           />
         </div>
-        <button type="submit">Log In</button>
+        <button className="form-button" type="submit">Log In</button>
       </form>
     </section>
+    </>
   );
 }
 

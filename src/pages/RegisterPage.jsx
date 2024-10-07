@@ -1,6 +1,7 @@
 import authQueries from "../services/autheQueries";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "../styles/LogInPage.css"
 
 function RegisterPage() {
   const navigate = useNavigate();
@@ -32,40 +33,51 @@ function RegisterPage() {
     })};
 
     return (
-      <section>
+      <>
+
+      <img className="highlighter high2" src="/highlighter3.png" alt="" />
+      <section className="shadow p-3 mb-5 bg-white rounded   form-user register-form" >
+        
         <form onSubmit={handleSubmit}>
-          <div>
-            <input
+
+          <div className="log-user">
+          <span className="labelForm"> -First Name</span>
+            <input className="form-user-box"
               type="text"
               name="firstName"
-              placeholder="First Name"
+              placeholder="Your first name..."
               value={formData.firstName}
               onChange={handleChange}
             />
           </div>
-          <div>
-            <input
+          
+          <div className="log-user">
+          <span className="labelForm"> - Last Name</span>
+            <input className="form-user-box"
               type="text"
               name="lastName"
-              placeholder="Last Name"
+              placeholder="Your last name..."
               value={formData.lastName}
               onChange={handleChange}
             />
           </div>
-          <div>
-            <input
+          <div className="log-user">
+          <span className="labelForm"> - Email</span>
+            <input className="form-user-box"
               type="email"
               name="email"
-              placeholder="Email"
+              placeholder="Your email..."
               value={formData.email}
               onChange={handleChange}
             />
           </div>
-          <div>
-            <input
+          
+          <div className="log-user">
+          <span className="labelForm"> - Email</span>
+            <input className="form-user-box"
               type="password"
               name="password"
-              placeholder="Password"
+              placeholder="Your password..."
               value={formData.password}
               onChange={handleChange}
             />
@@ -74,6 +86,7 @@ function RegisterPage() {
           <button type="submit">Register</button>
         </form>
       </section>
+      </>
     );
   };
 

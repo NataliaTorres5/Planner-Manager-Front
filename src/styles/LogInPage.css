@@ -1,0 +1,29 @@
+.log-user{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 45px;
+}
+
+.highlighter{
+    width: 7rem;
+    position: absolute;
+    margin-right: 35rem;
+    margin-top: 1rem;
+}
+
+.labelForm{
+    text-align: start;
+}
+
+.form-user-box{
+    border: none;
+    border-bottom: solid 2px #dee2e6;
+    padding: 2px 25px 2px 25px;
+    text-align: start;
+    font-style: italic;
+}
+
+.form-user{
+    width: 50%;
+}
